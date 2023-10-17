@@ -1,0 +1,84 @@
+cars{
+    display:block;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0.5em;
+    margin: 1em auto;
+    counter-reset: car-number;
+}
+
+
+cars > car{
+    height: 2em;
+    margin: 1em;
+    display: table-row;
+}
+
+car::before{
+    display: inline-block;
+    counter-increment: car-number;
+    content: counter(car-number) ")";
+}
+
+licensePlateNumber{
+    display: inline-block;
+    border: thin solid black;
+    padding: 0.5em;
+    margin: 1em auto;
+    background-color: red;
+    color:antiquewhite
+}
+
+brand,model,color,price{
+    font-size:medium;
+    padding: 0.5em;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+owner::before{
+    content: "[hover to show owner]";
+    visibility: visible;
+}
+
+owner::before:hover + owner {
+    visibility: visible;
+}
+
+owner{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+price::after{
+    content: " "attr(currency);
+}
+
+year{
+    vertical-align: super;
+    font-size: small;
+}
+year::after{
+    content: ")";
+    font-size: small;
+}
+
+year::before{
+    content: "(";
+    font-size: small;
+}
+
+car:nth-child(even){
+    background-color: gray;
+    color:white
+}
+
+car:hover{
+    background-color: yellow;
+
+}

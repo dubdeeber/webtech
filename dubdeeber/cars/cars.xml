@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE cars SYSTEM "./car-schema.dtd">
+<?xml-stylesheet type="text/css" href="car-styles.css"?>
+<cars>
+    <car>
+        <licensePlateNumber>AABB12</licensePlateNumber>
+        <brand>Volkswagen</brand>
+        <model>Golf 7 GTI</model>
+        <color>black</color>
+        <engine motorType="2.0 TSI" hp="220"/>
+        <year>2015</year>
+        <price currency="HUF">7.000.000</price>
+        <owner>
+            <name>
+                <firstName>John</firstName>
+                <lastName>Doe</lastName>
+            </name>
+            <phoneNumber type="phone">123456789</phoneNumber>
+            <phoneNumber type="fax">001234567</phoneNumber>
+            <email>john.doe@gmail.com</email>
+        </owner>
+    </car>
+    <car>
+        <licensePlateNumber>AABB13</licensePlateNumber>
+        <brand>Porsche</brand>
+        <model>911 GT3 RS</model>
+        <color>green</color>
+        <engine motorType="4.0" hp="525"/>
+        <year>2022</year>
+        <price currency="EUR">170.000</price>
+    </car>
+    <car>
+        <licensePlateNumber>AABB14</licensePlateNumber>
+        <brand>Audi</brand>
+        <model>RS Sportback</model>
+        <color>graphite</color>
+        <engine motorType="4.0" hp="621"/>
+        <year>2020</year>
+        <price currency="USD">120.000</price>
+    </car>
+</cars>

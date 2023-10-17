@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT cars (car)*>
+<!ELEMENT car (licensePlateNumber,brand,model,color,engine,year,price,owner?)>
+<!ELEMENT licensePlateNumber (#PCDATA)>
+<!ELEMENT brand (#PCDATA)>
+<!ELEMENT model (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT engine (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT owner (name,phoneNumber+,email)>
+<!ELEMENT name (firstName,lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT phoneNumber (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST engine motorType CDATA #REQUIRED>
+<!ATTLIST engine hp CDATA #REQUIRED>
+<!ATTLIST price currency CDATA #REQUIRED>
+<!ATTLIST phoneNumber type (phone| fax) #REQUIRED> 
+<!ATTLIST enprice currency CDATA #REQUIRED>

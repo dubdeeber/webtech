@@ -1,0 +1,10 @@
+<?cml version="1.0" encoding="UTF-8"?>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT stagedir (#PCDATA)>
+<!ELEMENT line (#PCDATA|stagedir)*>
+<!ELEMENT speaker (#PCDATA)>
+<!ELEMENT play (author, title, act*)>
+<!ELEMENT act (title,scene*)>
+<!ELEMENT scene (title, speech*)>
+<!ELEMENT speech (speaker, (line | stagedir)*)>
